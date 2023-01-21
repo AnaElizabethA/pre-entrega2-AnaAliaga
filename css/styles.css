@@ -11,7 +11,6 @@ a {
     text-decoration: none;
 }
 
-
 #cabecera {
     background-image: url(../img/nav-madera2.jpg);
     display: flex;
@@ -86,6 +85,17 @@ a {
     width: 45rem;
 }
 
+.d-flex {
+    display: flex;
+    height: max-content;
+    padding: 2rem;
+    margin: 3rem;
+    border-style: double;
+}
+
+.d-flex img {
+    width: 12rem;
+}
 
 
 .card {
@@ -108,3 +118,13 @@ a {
     margin: 10rem;
 }
 
+#footer {
+    background-color:darksalmon;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+
+#footer img {
+    width: 3rem;
+}
