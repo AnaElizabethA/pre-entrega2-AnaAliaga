@@ -65,14 +65,7 @@ a {
     margin-bottom: 1rem;
 }
 
-.fotos p {
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
 
-}
 
 .fotos img{
     display: inline;
@@ -97,31 +90,52 @@ a {
     width: 13rem;
 }
 
+/* comienza mi pagina productos*/
 
-.card {
-    background-color: rgba(185, 154, 60, 0.856);
-    padding: 2rem 3rem;
-    margin: 3rem 2rem;
+.tarjetas h3 {
+    text-align: center;
+    text-decoration: underline;
+    padding: 2rem;
+    margin: 2rem;
 }
 
-.card__titulochico {
-
-    margin: 1rem;
-
+.tarjetas-arrimo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    
 }
 
-.card__texto {
-    margin: 1rem;
+.tarjetas-mesas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    
 }
 
-.card__fotoproducto {
-    margin: 10rem;
+.tarjetas-modulares {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    
+}
+
+.tarjetas-extras {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    
 }
 
 #footer {
     background-color:darksalmon;
     flex-direction: column;
     padding: 1rem;
+    margin-top: 3rem;
 
 }
 
