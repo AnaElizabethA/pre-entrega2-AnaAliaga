@@ -11,6 +11,7 @@ a {
     text-decoration: none;
 }
 
+/* HEADER */
 #cabecera {
     background-image: url(../img/nav-madera2.jpg);
     display: flex;
@@ -54,60 +55,26 @@ a {
 }
 
 
+/*color fondo pagina*/
 #cuerpo  {
     background-color: blanchedalmond;
-
 }
 
+
+/*todos los h1*/
 .titulo1 {
     text-align: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-.titulo1 img {
-    width: 40rem;
-    border-radius: 5%;
+/*INDEX*/
+.card {
     margin: 2rem;
-}
-
-.text-end {
-    display: inline-block;
-    margin: 2rem;
-
-}
-
-.parrafoH {
-    display: flex;
-    margin: 4rem 5rem;
-    padding: 1rem;
-    background-color: bisque;
-    text-align: center;
-    font-size: 1.5rem;
-    border-style: double;
-}
-
-.col {
-    display: inline-block;
-    width: 40%;
-    margin: 3rem;
-
-
-}
-
-.fotos img{
-    display: inline;
-    width:20rem;
-    height: 15rem;
-    text-align: center;
-}
-
-#carouselExampleIndicators {
-    width: 45rem;
 }
 
 .d-flex {
     display: flex;
-    height: max-content;
+    height: auto;
     padding: 2rem;
     margin: 3rem;
     border-style: double;
@@ -119,12 +86,12 @@ a {
 
 /* comienza mi pagina productos*/
 
-.tarjetas h3 {
-    text-align: center;
-    text-decoration: underline;
-    padding: 2rem;
-    margin: 2rem;
+.col {
+    display: inline-block;
+    width: 40%;
+    margin: 3rem;
 }
+
 
 .tarjetas-arrimo {
     display: flex;
@@ -157,6 +124,40 @@ a {
     gap: 3rem;
     
 }
+
+/*HIstoria*/
+/*foto fundador*/
+.titulo1 img {
+    width: 40rem;
+    border-radius: 5%;
+    margin: 2rem;
+}
+
+.text-end {
+    display: inline-block;
+    margin: 2rem;
+
+}
+
+.parrafoH {
+    display: flex;
+    margin: 4rem 5rem;
+    padding: 1rem;
+    background-color: bisque;
+    text-align: center;
+    font-size: 1.5rem;
+    border-style: double;
+}
+
+.tarjetas h3 {
+    text-align: center;
+    text-decoration: underline;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+
+/*FOOTER*/
 
 #footer {
     background-color:darksalmon;
