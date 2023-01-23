@@ -70,6 +70,12 @@ a {
     margin: 2rem;
 }
 
+.text-end {
+    display: inline-block;
+    margin: 2rem;
+
+}
+
 .parrafoH {
     display: flex;
     margin: 4rem 5rem;
@@ -78,6 +84,14 @@ a {
     text-align: center;
     font-size: 1.5rem;
     border-style: double;
+}
+
+.col {
+    display: inline-block;
+    width: 40%;
+    margin: 3rem;
+
+
 }
 
 .fotos img{
