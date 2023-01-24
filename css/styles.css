@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+/* tengo listas las vistas desktop que es la primera que hice y la laptop
+en mis paginas esta listo, el index, productos y historia ,Falta contacto y galeria*/
+
 img {
     max-width: 100%;
 }
@@ -86,13 +89,6 @@ a {
 
 /* comienza mi pagina productos*/
 
-.col {
-    display: inline-block;
-    width: 40%;
-    margin: 3rem;
-}
-
-
 .tarjetas-arrimo {
     display: flex;
     flex-direction: row;
@@ -156,6 +152,11 @@ a {
     margin: 2rem;
 }
 
+.col {
+    display: inline-block;
+    width: 40%;
+    margin: 3rem;
+}
 
 /*FOOTER*/
 
@@ -170,3 +171,110 @@ a {
 #footer img {
     width: 2.5rem;
 }
+
+/*vista para Tablet*/
+
+@media (max-width: 768px) {
+
+    .logo {
+        width: 22rem;
+    }
+
+    .menu-nav {
+        font-size: medium; /*ver si el tamaño esta bien en el menu?*/
+        gap: 3rem;
+    }
+
+    .titulo1 {
+        text-align: center;
+    }
+
+    .d-flex {
+        align-items: center;
+        max-width: fit-content; /*Este ponerlo en vista mobil igual*/
+    }
+
+    .tarjetas-arrimo {
+       gap: 0.5rem;
+    }
+
+    .tarjetas-mesas {
+        gap: 0.5rem;
+    }
+    
+    .tarjetas-modulares {
+        gap: 0.5rem;
+    }
+    
+    .tarjetas-extras {
+        gap: 0.5rem;
+    }
+
+    .titulo1 img {
+        width: 25rem;
+    }
+
+    .col {
+        display: flex;
+        width: 47%;
+        margin: 0.5rem;
+    }
+
+}
+
+/*vista para mobile*/
+
+@media (max-width: 320px) {
+    .menu-nav {
+        flex-direction: column;
+        text-align: initial;
+        font-size: small;
+        gap: 0.3rem;
+    }
+
+
+    .titulo1 {
+        flex-direction: column;
+        margin: 1rem;
+        padding: 1rem;
+
+    }
+
+
+
+    .tarjetas h3 {
+        flex-direction: column;
+        margin: 0.5rem;
+        padding: 0.5rem;
+
+    }
+
+    .fotoprincipal {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        /*quiero quitarle el texto a la imagen*/
+    }
+
+    .tarjetas-arrimo {
+        flex-direction: column;
+        gap: 0.5rem;
+     }
+ 
+     .tarjetas-mesas {
+        flex-direction: column;
+         gap: 0.5rem;
+     }
+     
+     .tarjetas-modulares {
+        flex-direction: column;
+         gap: 0.5rem;
+     }
+     
+     .tarjetas-extras {
+        flex-direction: column;
+         gap: 0.5rem;
+     }
+    
+}
+
