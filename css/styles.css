@@ -237,8 +237,8 @@ a {
         flex-direction: column;
         margin: 1rem;
         padding: 1rem;
-
     }
+
 
 
 
@@ -247,6 +247,10 @@ a {
         margin: 0.5rem;
         padding: 0.5rem;
 
+    }
+
+    .d-flex {
+        flex-direction: column;
     }
 
     .fotoprincipal {
@@ -274,6 +278,21 @@ a {
      .tarjetas-extras {
         flex-direction: column;
          gap: 0.5rem;
+     }
+
+     .parrafoH {
+        flex-direction: column;
+        justify-content: center;
+        margin: 1rem;
+        padding: 0.5rem;
+        font-size: medium;
+
+     }
+
+     .col {
+        flex-direction: column;
+        width: 35rem;
+
      }
     
 }
