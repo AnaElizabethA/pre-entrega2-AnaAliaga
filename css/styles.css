@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-/* tengo listas las vistas desktop que es la primera que hice y la laptop
+/* tengo listas las vistas desktop que es la primera que hice y la laptop y la mobile 
 en mis paginas esta listo, el index, productos y historia ,Falta contacto y galeria*/
 
 img {
@@ -28,6 +28,7 @@ a {
     margin-bottom: 1rem;
     width: 30rem;
 }
+/*menu de navegacion*/
 
 .menu {
     background-color: chocolate;
@@ -181,7 +182,7 @@ a {
     }
 
     .menu-nav {
-        font-size: medium; /*ver si el tamaño esta bien en el menu?*/
+        font-size: medium; 
         gap: 3rem;
     }
 
@@ -191,7 +192,7 @@ a {
 
     .d-flex {
         align-items: center;
-        max-width: fit-content; /*Este ponerlo en vista mobil igual*/
+        max-width: fit-content; 
     }
 
     .tarjetas-arrimo {
@@ -249,6 +250,7 @@ a {
 
     }
 
+
     .d-flex {
         flex-direction: column;
     }
@@ -257,7 +259,7 @@ a {
         display: flex;
         flex-direction: column;
         width: 20rem;
-        /*quiero quitarle el texto a la imagen*/
+        font-size: 0%;
     }
 
     .tarjetas-arrimo {
@@ -294,6 +296,7 @@ a {
         width: 35rem;
 
      }
-    
+
 }
 
+/* Aqui termina mmi vista mobile*/
