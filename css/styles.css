@@ -294,7 +294,11 @@ a {
      .col {
         flex-direction: column;
         width: 35rem;
+     }
 
+     #footer {
+        font-size: smaller;
+        padding: 0.5rem;
      }
 
 }
