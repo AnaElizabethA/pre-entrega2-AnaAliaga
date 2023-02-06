@@ -1,0 +1,155 @@
+#cabecera {
+    background-image: url(../img/nav-madera2.jpg);
+    @include flex-columna;
+
+}
+
+.logo{
+    display: block;
+    width: $iconoXgrande;
+}
+
+/*menu de navegacion*/
+.menu,
+.menu-nav {
+    
+    background-color: $color-secundario;
+    display: flex;
+    text-align: center;
+    font-size: $fuente-media;
+    margin-top: $espacioChico;
+    gap: 4rem;
+
+    li,
+    li a {
+        list-style: none;
+        text-decoration: none;
+        color: $color-terciario;
+    }
+
+    & a:hover {
+        background-color: $color-primario;
+        border-radius: 6%;
+    }
+
+}
+
+#cuerpo {
+    background-color: $color-primario;
+    font-size: $fuentePrincipal;
+}
+
+.titulo1 {
+    text-align: center;
+    margin-top: $espacioXgrande;
+    margin-bottom: $espacioXgrande;
+    
+}
+
+h2,
+h3,
+h4 {
+    margin-top: $espacioChico;
+    text-align: center;
+}
+
+footer {
+        background-color:darksalmon;
+        margin-top: $espacioXgrande;
+    @include flex-columna;
+
+    .container-redes a {
+        color: $color-terciario;
+        text-decoration: none;
+        font-size: $iconoChico;
+    }
+}
+
+@media (max-width: $tablet){
+    .logo {
+        width: $iconoGrande;
+    }
+
+    .menu-nav {
+        font-size: medium; 
+        gap: 3rem;
+        margin: $espacioChico;
+    }
+
+    .titulo1 {
+        margin: $espacioGrande;
+    }
+
+    .d-flex {
+        align-items: center;
+        max-width: fit-content; 
+    }
+
+    footer {
+        .container-redes a{
+            font-size: $iconoXchico;
+        }
+    }
+}
+
+@media (max-width: $celularL){
+    .logo {
+        width: $iconoGrande;
+    }
+    .menu-nav {
+        flex-direction: column;
+        text-align: initial;
+        font-size: medium;
+        gap: 0.3rem;
+    }
+
+    .titulo1 {
+        @include flex-columna;
+        margin: $espacioMedio;
+    }
+
+    .fotoprincipal img{
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        font-size: none;
+    }
+
+    .d-flex {
+        @include flex-columna;
+        width: 20rem;
+    }
+
+    footer {
+        .container-redes {
+            font-size: small ;
+        }
+    }
+
+    
+
+
+}
+
+@media (max-width: $celularS) {
+    #cabecera {
+        display: inline-flex;
+    }
+    .logo {
+        width: $iconoMediano;
+    }
+    .menu-nav {
+        flex-direction: column;
+        text-align: initial;
+        font-size: small;
+        gap: 0.2rem;
+    }
+
+    .titulo1 {
+        @include flex-columna;
+        margin: $espacioMedio;
+    }
+
+}
+
+

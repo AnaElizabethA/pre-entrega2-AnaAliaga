@@ -1,0 +1,18 @@
+/*Pagina Productos*/
+
+.tarjetas-arrimo,
+.tarjetas-mesas,
+.tarjetas-modulares,
+.tarjetas-extras {
+    @include tarjetas
+}
+
+@media (min-width: $tablet) {
+    .tarjetas-arrimo,
+    .tarjetas-mesas,
+    .tarjetas-modulares,
+    .tarjetas-extras {
+        display: flex;
+        flex-direction: row;
+    }
+}
