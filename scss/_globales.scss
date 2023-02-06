@@ -48,7 +48,8 @@
 
 h2,
 h3,
-h4 {
+h4,
+p {
     margin-top: $espacioChico;
     text-align: center;
 }
@@ -64,6 +65,8 @@ footer {
         font-size: $iconoChico;
     }
 }
+
+/*Cambios Vista Tablet*/
 
 @media (max-width: $tablet){
     .logo {
@@ -85,12 +88,20 @@ footer {
         max-width: fit-content; 
     }
 
+    .tarjetas-arrimo,
+    .tarjetas-mesas,
+    .tarjetas-modulares,
+    .tarjetas-extras {
+    }
+
     footer {
         .container-redes a{
             font-size: $iconoXchico;
         }
     }
 }
+
+/* Cambios vista Celular L*/
 
 @media (max-width: $celularL){
     .logo {
@@ -108,36 +119,67 @@ footer {
         margin: $espacioMedio;
     }
 
-    .fotoprincipal img{
+    .card{
         display: flex;
         flex-direction: column;
-        width: 20rem;
-        font-size: none;
+        margin: 2rem;
+
+        p {
+            display: none;
+        }
+
+        .card-img {
+            height: 10rem;
+        }
+
     }
 
     .d-flex {
         @include flex-columna;
         width: 20rem;
+        margin: 0%;
+        gap: 1.5rem;
+
+        img {
+            height: 8rem;
+            border-style: groove;
+        }
     }
 
-    footer {
-        .container-redes {
-            font-size: small ;
+    .tarjetas-arrimo,
+    .tarjetas-mesas,
+    .tarjetas-modulares,
+    .tarjetas-extras {
+        flex-wrap: wrap;
+        width: 25rem;
+        
+        .card {
+            margin: 2rem;
         }
     }
 
     
 
+    footer {
+        .container-redes a{
+            font-size: 2.5rem ;
+        }
+    }
 
 }
+
+
+/* Cambios Vista Celular S */
 
 @media (max-width: $celularS) {
     #cabecera {
         display: inline-flex;
     }
+
     .logo {
         width: $iconoMediano;
     }
+
     .menu-nav {
         flex-direction: column;
         text-align: initial;
@@ -150,6 +192,40 @@ footer {
         margin: $espacioMedio;
     }
 
+    .card{
+        margin: 0;
+
+        h4,
+        p {
+            display: none;
+        }
+
+        img {
+            height: 10rem;
+        }
+    }
+
+    .d-flex {
+        width: 14rem;
+        gap: 1rem;
+
+        img {
+            height: 8rem;
+        }
+    }
+
+    .tarjetas-arrimo,
+    .tarjetas-mesas,
+    .tarjetas-modulares,
+    .tarjetas-extras {
+        flex-wrap: wrap;
+        width: 20rem;
+    }
+
+    footer {
+        .container-redes a{
+            font-size: 2rem ;
+        }
+    }
+
 }
-
-
