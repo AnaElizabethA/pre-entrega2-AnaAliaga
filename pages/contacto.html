@@ -52,73 +52,61 @@
 
     </header>
 
-    <section>
-        <h1 class="titulo1">
-            Contacto
-        </h1>
+    <section >
+        <h1 class="titulo1 animate__animated animate__flipInX" >" Contáctanos "</h1>
+        
+        <p class="parrafo-contacto">Completa tus datos en el formulario y te contactaremos a la brevedad</p>
     </section>
-
-    <section>
-        <h3>Completa el formulario</h3>
+    
+    <main class="main-contacto container">
         <form>
-            <fieldset>
+            <h3 class="text-center">Formulario</h3>
+            <div class="campos">
+                <label for="nombreApellido">Nombre y apellido</label>
+                <input type="text" id="nombreApellido" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="campos">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="Tu e-mail" required>
+            </div>
+            <div class="campos">
+                <label for="telf">Número de teléfono</label>
+                <input type="tel" id="telf">
+            </div>
+            <div class="campos">
+                <label for="mensaje">Dejanos tu consulta o mensaje</label>
+                <textarea id="mensaje"></textarea>
+            </div>
 
-                <legend>Ingresa tus datos</legend>
-
-                <div>
-                    <label for="nombre-apeliido">Nombre y Apellido</label>
-                    <input type="text" name="nombre" id="nombre-apellido"
-                    placeholder="nombre y apellido" required>
-                </div>
-    
-                <div>
-                    <label for="telefono">Telefono</label>
-                    <input type="tel" id="telefono"
-                    placeholder="telefono"required>
-                  </div>
-    
-                  <div>
-                    <label for="correo">Correo electronico</label>
-                   <input type="email" name="email" id="correo"
-                   placeholder="email"required>
-                 </div>
-    
-                 <div>
-                    <label for="mensaje">Dejanos un mensaje</label>
-                    <textarea id="mensaje" cols="30" rows="8"></textarea>
-                 </div>
-    
-                 <input type="submit" value="Enviar formulario">
-                 <input type="reset" value="Limpiar formulario">
-            
-           
-            </fieldset>
+            <input type="submit" value="Enviar formulario" class="botones-form">
+            <input type="reset" value="Limpiar" class="botones-form">
         </form>
-           
-    </section>
+
+        <div class="container-mapa">
+            <h3 class="text-center">¿Donde estamos?</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1340.6837263369032!2d-73.01121509724794!3d-36.945305583087446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b99a3df404c7%3A0x28637049054581ee!2zUsOtbyBNYWxsZWNvIDUzLCA0MTEwNTg0IENvbmNlcGNpw7NuLCBDaGlndWF5YW50ZSwgQsOtbyBCw61v!5e0!3m2!1ses-419!2scl!4v1671816929681!5m2!1ses-419!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+        </div>
+    </main>
+
 
     <div>
-        <h3>Como Llegar</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1340.6837263369032!2d-73.01121509724794!3d-36.945305583087446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b99a3df404c7%3A0x28637049054581ee!2zUsOtbyBNYWxsZWNvIDUzLCA0MTEwNTg0IENvbmNlcGNpw7NuLCBDaGlndWF5YW50ZSwgQsOtbyBCw61v!5e0!3m2!1ses-419!2scl!4v1671816929681!5m2!1ses-419!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        <h3>o Contrata tu servicio a domicilio al whatsapp</h3>
-        <a href="https://walink.co/f38940">https://walink.co/f38940</a>
+        <h3>  o Pide tu entrega a Domicilio directo al whatsApp </h3>
     </div>
 
     <footer id="footer">
 
-        <a target="_blank" href="https://www.instagram.com/arrimos._morales/">Experiencias Clientes </a>
+        <h4>Experiencias Clientes </h4>
       
         <div class="container-redes">
-            <a href="#" target="_blank">
+            <a href="https://www.instagram.com/arrimos._morales/" target="_blank">
                 <iconify-icon icon="mdi:instagram"></iconify-icon>
             </a>
       
-            <a href="#" target="_blank">
+            <a  target="_blank">
                 <iconify-icon icon="uil:facebook"></iconify-icon>
             </a>
       
-            <a href="#" target="_blank">
+            <a href="https://walink.co/f38940">
                 <iconify-icon icon="ic:baseline-whatsapp"></iconify-icon>
             </a>
         </div>

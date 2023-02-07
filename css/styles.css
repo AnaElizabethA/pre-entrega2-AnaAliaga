@@ -90,6 +90,18 @@ footer .container-redes a {
     align-items: center;
     max-width: fit-content;
   }
+  .titulo1 img {
+    width: 30rem;
+  }
+  .tarjetas-arrimo,
+  .tarjetas-extras,
+  .tarjetas-mesas,
+  .tarjetas-modulares {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+  } /*AQUI DEBO ARREGLAR QUEDE*/
   footer .container-redes a {
     font-size: 3.5rem;
   }
@@ -147,6 +159,13 @@ footer .container-redes a {
   .tarjetas-extras .card {
     margin: 2rem;
   }
+  .titulo1 img {
+    width: 25rem;
+  }
+  .col {
+    width: 30;
+    margin: 1rem;
+  }
   footer .container-redes a {
     font-size: 2.5rem;
   }
@@ -195,6 +214,14 @@ footer .container-redes a {
     flex-wrap: wrap;
     width: 20rem;
   }
+  .titulo1 img {
+    width: 15rem;
+  }
+  .col {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0rem;
+  }
   footer .container-redes a {
     font-size: 2rem;
   }
@@ -212,7 +239,7 @@ footer .container-redes a {
 }
 
 .d-flex img {
-  width: 15rem;
+  width: 13rem;
 }
 
 /*Pagina Productos*/
@@ -223,6 +250,69 @@ footer .container-redes a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+/* Pagina Historia*/
+.titulo1 img {
+  width: 40rem;
+  border-radius: 5%;
+  margin: 2rem;
+}
+
+.text-end {
+  display: inline-block;
+  margin: 2rem;
+}
+
+.parrafoH {
+  display: flex;
+  margin: 4rem 5rem;
+  padding: 1rem;
+  background-color: bisque;
+  text-align: center;
+  font-size: 1.5rem;
+  border-style: double;
+}
+
+.tarjetas h3 {
+  text-align: center;
+  text-decoration: underline;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.col {
+  display: inline-block;
+  width: 40%;
+  margin: 2rem;
+}
+
+.parrafo-contacto {
+  text-align: center;
+  margin: 2.5rem 0;
+  font-size: 20px;
+  gap: 4rem;
+}
+
+.main-contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: double;
+  padding: 2.1rem;
+  gap: 1rem;
+}
+
+.container-mapa {
+  border-style: double;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -88,11 +88,23 @@ footer {
         max-width: fit-content; 
     }
 
-    .tarjetas-arrimo,
-    .tarjetas-mesas,
-    .tarjetas-modulares,
-    .tarjetas-extras {
+    .titulo1 {
+        img{
+            width: 30rem;
+        }
     }
+
+    .tarjetas-arrimo,
+    .tarjetas-extras,
+    .tarjetas-mesas,
+    .tarjetas-modulares {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $espacioChico;
+        justify-items: center;
+    }/*AQUI DEBO ARREGLAR QUEDE*/
+
+    
 
     footer {
         .container-redes a{
@@ -158,13 +170,24 @@ footer {
         }
     }
 
-    
+    .titulo1 {
+        img{
+            width: 25rem;
+        }
+    }
 
+    .col {
+        width: 30;
+        margin: 1rem;
+    }
+
+    
     footer {
         .container-redes a{
             font-size: 2.5rem ;
         }
     }
+    
 
 }
 
@@ -221,6 +244,19 @@ footer {
         flex-wrap: wrap;
         width: 20rem;
     }
+
+    .titulo1 {
+        img{
+            width: 15rem;
+        }
+    }
+
+    .col {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0rem;
+    }
+
 
     footer {
         .container-redes a{

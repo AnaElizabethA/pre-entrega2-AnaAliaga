@@ -1,0 +1,25 @@
+.parrafo-contacto {
+    text-align: center;
+    margin: $espacioMedio 0;
+    font-size: $fuente-media;
+    gap: 4rem;
+}
+
+.main-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+form {
+    @include flex-columna;
+    border-style: double;
+    padding: 2.1rem;
+    gap: 1rem;
+}
+
+.container-mapa {
+    border-style: double;
+    padding: 2rem;
+}
