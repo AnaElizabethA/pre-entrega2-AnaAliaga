@@ -37,6 +37,7 @@
 }
 .menu a:hover,
 .menu-nav a:hover {
+  padding: 0.5rem;
   background-color: blanchedalmond;
   border-radius: 6%;
 }
@@ -102,6 +103,10 @@ footer .container-redes a {
     gap: 1rem;
     justify-items: center;
   } /*AQUI DEBO ARREGLAR QUEDE*/
+  .main-contacto {
+    display: flex;
+    flex-direction: column;
+  }
   footer .container-redes a {
     font-size: 3.5rem;
   }
@@ -313,6 +318,25 @@ form {
 .container-mapa {
   border-style: double;
   padding: 2rem;
+}
+
+/* PAGINA GALERIA*/
+.personalizados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.personalizados img {
+  width: 25rem;
+  gap: 1rem;
+  margin: 1rem;
+  border-style: groove;
+}
+
+@media (max-width: 428px) {
+  .personalizados img {
+    width: 18rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
