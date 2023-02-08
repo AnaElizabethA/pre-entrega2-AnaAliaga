@@ -5,7 +5,7 @@ $color-terciario: #000;
 
 /*Tamaños de fuente*/
 $iconoXgrande: 30rem;
-$iconoGrande: 23rem;
+$iconoGrande: 22rem;
 $iconoMediano: 15rem;
 $iconoChico: 5rem;
 $iconoXchico: 3.5rem;
@@ -29,10 +29,8 @@ $espacioXgrande: 6rem;
 
 
 /* fuente */
-$fuentePrincipal: 'Unbounded', cursive;
-
-
-
+$fuentePrincipal: 'Merriweather', serif;
+ 
 
 /*MIXIN*/
 @mixin flex-columna {

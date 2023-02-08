@@ -44,7 +44,7 @@
 
 #cuerpo {
   background-color: blanchedalmond;
-  font-size: "Unbounded", cursive;
+  font-family: "Merriweather", serif;
 }
 
 .titulo1 {
@@ -61,6 +61,10 @@ p {
   text-align: center;
 }
 
+h3 {
+  text-decoration: underline;
+}
+
 footer {
   background-color: darksalmon;
   margin-top: 6rem;
@@ -74,10 +78,28 @@ footer .container-redes a {
   font-size: 5rem;
 }
 
+.btn, form .botones-form {
+  border: solid 1px chocolate;
+  width: 200px;
+  text-align: center;
+  padding: 5px 1rem;
+  border-radius: 10px;
+}
+
+.parrafoH {
+  display: flex;
+  margin: 4rem 5rem;
+  padding: 1rem;
+  background-color: rgb(236, 186, 126);
+  text-align: center;
+  font-size: 1.5rem;
+  border-style: double;
+}
+
 /*Cambios Vista Tablet*/
 @media (max-width: 768px) {
   .logo {
-    width: 23rem;
+    width: 22rem;
   }
   .menu-nav {
     font-size: medium;
@@ -94,19 +116,6 @@ footer .container-redes a {
   .titulo1 img {
     width: 30rem;
   }
-  .tarjetas-arrimo,
-  .tarjetas-extras,
-  .tarjetas-mesas,
-  .tarjetas-modulares {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    justify-items: center;
-  } /*AQUI DEBO ARREGLAR QUEDE*/
-  .main-contacto {
-    display: flex;
-    flex-direction: column;
-  }
   footer .container-redes a {
     font-size: 3.5rem;
   }
@@ -114,7 +123,7 @@ footer .container-redes a {
 /* Cambios vista Celular L*/
 @media (max-width: 428px) {
   .logo {
-    width: 23rem;
+    width: 22rem;
   }
   .menu-nav {
     flex-direction: column;
@@ -127,29 +136,6 @@ footer .container-redes a {
     flex-direction: column;
     align-items: center;
     margin: 2.5rem;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-  }
-  .card p {
-    display: none;
-  }
-  .card .card-img {
-    height: 10rem;
-  }
-  .d-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20rem;
-    margin: 0%;
-    gap: 1.5rem;
-  }
-  .d-flex img {
-    height: 8rem;
-    border-style: groove;
   }
   .tarjetas-arrimo,
   .tarjetas-mesas,
@@ -195,30 +181,6 @@ footer .container-redes a {
     align-items: center;
     margin: 2.5rem;
   }
-  .card {
-    margin: 0;
-  }
-  .card h4,
-  .card p {
-    display: none;
-  }
-  .card img {
-    height: 10rem;
-  }
-  .d-flex {
-    width: 14rem;
-    gap: 1rem;
-  }
-  .d-flex img {
-    height: 8rem;
-  }
-  .tarjetas-arrimo,
-  .tarjetas-mesas,
-  .tarjetas-modulares,
-  .tarjetas-extras {
-    flex-wrap: wrap;
-    width: 20rem;
-  }
   .titulo1 img {
     width: 15rem;
   }
@@ -247,6 +209,51 @@ footer .container-redes a {
   width: 13rem;
 }
 
+@media (max-width: 428px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .card p {
+    display: none;
+  }
+  .card .card-img {
+    height: 15rem;
+  }
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    gap: 1.5rem;
+  }
+  .d-flex img {
+    width: 10rem;
+    border-style: groove;
+  }
+  .parrafoH {
+    margin: 1rem;
+    font-size: medium;
+  }
+}
+@media (max-width: 320px) {
+  .card h4,
+  .card p {
+    display: none;
+  }
+  .card .card-img {
+    height: 10rem;
+  }
+  .d-flex {
+    width: 14rem;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .d-flex img {
+    width: 8rem;
+  }
+}
 /*Pagina Productos*/
 .tarjetas-arrimo,
 .tarjetas-mesas,
@@ -255,8 +262,36 @@ footer .container-redes a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  height: 35rem;
 }
 
+.btn, form .botones-form {
+  background-color: chocolate;
+  color: #000;
+  font-weight: 500;
+}
+.btn:hover, form .botones-form:hover {
+  background-color: blanchedalmond;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .tarjetas-arrimo .tarjetas-mesas .tarjetas-modulares .tarjetas-extras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+  }
+}
+@media (max-width: 320px) {
+  .tarjetas-arrimo,
+  .tarjetas-mesas,
+  .tarjetas-modulares,
+  .tarjetas-extras {
+    flex-wrap: wrap;
+    width: 18rem;
+  }
+}
 /* Pagina Historia*/
 .titulo1 img {
   width: 40rem;
@@ -267,16 +302,6 @@ footer .container-redes a {
 .text-end {
   display: inline-block;
   margin: 2rem;
-}
-
-.parrafoH {
-  display: flex;
-  margin: 4rem 5rem;
-  padding: 1rem;
-  background-color: bisque;
-  text-align: center;
-  font-size: 1.5rem;
-  border-style: double;
 }
 
 .tarjetas h3 {
@@ -306,6 +331,11 @@ footer .container-redes a {
   align-items: center;
 }
 
+.container-mapa {
+  border-style: double;
+  padding: 2rem;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -314,17 +344,46 @@ form {
   padding: 2.1rem;
   gap: 1rem;
 }
-
-.container-mapa {
-  border-style: double;
-  padding: 2rem;
+form .campos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form .botones-form {
+  background-color: chocolate;
+  color: #000;
+  font-weight: 600;
+}
+form .botones-form:hover {
+  background-color: blanchedalmond;
+  color: #000;
 }
 
+iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main-contacto {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 4rem;
+  }
+}
 /* PAGINA GALERIA*/
+.titulo1 video {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-style: groove;
+}
+
 .personalizados {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 .personalizados img {
   width: 25rem;
@@ -335,7 +394,21 @@ form {
 
 @media (max-width: 428px) {
   .personalizados img {
+    width: 15rem;
+  }
+  .titulo1 video {
     width: 18rem;
+  }
+}
+@media (max-width: 320px) {
+  .personalizados img {
+    width: 12rem;
+  }
+  .titulo1 {
+    margin: 2rem;
+  }
+  .titulo1 video {
+    width: 12rem;
   }
 }
 

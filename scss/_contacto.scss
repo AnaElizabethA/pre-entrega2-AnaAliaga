@@ -12,14 +12,49 @@
     align-items: center;
 }
 
+.container-mapa {
+    border-style: double;
+    padding: 2rem;
+}
+
 form {
     @include flex-columna;
     border-style: double;
     padding: 2.1rem;
     gap: 1rem;
+
+    .campos {
+        @include flex-columna;
+    }
+
+    .botones-form {
+        @extend .btn;
+        background-color: $color-secundario;
+        color: $color-terciario;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $color-primario;
+            color: $color-terciario;
+        }
+    }
+
 }
 
-.container-mapa {
-    border-style: double;
-    padding: 2rem;
+iframe {
+    max-width: 100%;
 }
+
+
+@media (max-width: $tablet) {
+    .main-contacto {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap:4rem;
+    }
+}
+
+
+    

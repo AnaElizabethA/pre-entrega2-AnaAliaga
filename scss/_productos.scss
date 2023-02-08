@@ -4,6 +4,42 @@
 .tarjetas-mesas,
 .tarjetas-modulares,
 .tarjetas-extras {
-    @include tarjetas
+    @include tarjetas;
+    height: 35rem;
 }
 
+.btn { 
+        @extend .btn;
+        background-color: $color-secundario;
+        color: $color-terciario;
+        font-weight: 500;
+
+        &:hover {
+            background-color: $color-primario;
+            color: $color-terciario;
+        }
+
+}
+
+@media (max-width: $tablet) {
+    .tarjetas-arrimo
+    .tarjetas-mesas
+    .tarjetas-modulares
+    .tarjetas-extras {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: $celularS) {
+    .tarjetas-arrimo,
+    .tarjetas-mesas,
+    .tarjetas-modulares,
+    .tarjetas-extras {
+        flex-wrap: wrap;
+        width: 18rem;
+    }
+}

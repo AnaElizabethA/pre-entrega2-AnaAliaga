@@ -37,7 +37,7 @@
 
 #cuerpo {
     background-color: $color-primario;
-    font-size: $fuentePrincipal;
+    font-family: $fuentePrincipal;
 }
 
 .titulo1 {
@@ -55,6 +55,10 @@ p {
     text-align: center;
 }
 
+h3 {
+    text-decoration: underline;
+}
+
 footer {
         background-color:darksalmon;
         margin-top: $espacioXgrande;
@@ -67,9 +71,30 @@ footer {
     }
 }
 
+.btn {
+    border: solid 1px $color-secundario;
+    width: 200px;
+    text-align: center;
+    padding: 5px $espacioChico;
+    border-radius: 10px;
+
+}
+
+.parrafoH {
+    display: flex;
+    margin: 4rem 5rem;
+    padding: 1rem;
+    background-color: rgb(236, 186, 126);
+    text-align: center;
+    font-size: 1.5rem;
+    border-style: double;
+
+}
+
 /*Cambios Vista Tablet*/
 
 @media (max-width: $tablet){
+    
     .logo {
         width: $iconoGrande;
     }
@@ -94,24 +119,7 @@ footer {
             width: 30rem;
         }
     }
-
-    .tarjetas-arrimo,
-    .tarjetas-extras,
-    .tarjetas-mesas,
-    .tarjetas-modulares {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: $espacioChico;
-        justify-items: center;
-    }/*AQUI DEBO ARREGLAR QUEDE*/
-
-    .main-contacto {
-        display: flex;
-        flex-direction: column;
-    }
-
     
-
     footer {
         .container-redes a{
             font-size: $iconoXchico;
@@ -137,32 +145,6 @@ footer {
         margin: $espacioMedio;
     }
 
-    .card{
-        display: flex;
-        flex-direction: column;
-        margin: 2rem;
-
-        p {
-            display: none;
-        }
-
-        .card-img {
-            height: 10rem;
-        }
-
-    }
-
-    .d-flex {
-        @include flex-columna;
-        width: 20rem;
-        margin: 0%;
-        gap: 1.5rem;
-
-        img {
-            height: 8rem;
-            border-style: groove;
-        }
-    }
 
     .tarjetas-arrimo,
     .tarjetas-mesas,
@@ -219,36 +201,6 @@ footer {
     .titulo1 {
         @include flex-columna;
         margin: $espacioMedio;
-    }
-
-    .card{
-        margin: 0;
-
-        h4,
-        p {
-            display: none;
-        }
-
-        img {
-            height: 10rem;
-        }
-    }
-
-    .d-flex {
-        width: 14rem;
-        gap: 1rem;
-
-        img {
-            height: 8rem;
-        }
-    }
-
-    .tarjetas-arrimo,
-    .tarjetas-mesas,
-    .tarjetas-modulares,
-    .tarjetas-extras {
-        flex-wrap: wrap;
-        width: 20rem;
     }
 
     .titulo1 {

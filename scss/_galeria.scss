@@ -1,9 +1,19 @@
 /* PAGINA GALERIA*/
+.titulo1 {
+    video {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-style: groove;
+    }
 
+}
 .personalizados {
     display:flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+
+    
 
     img {
     width: 25rem;
@@ -16,7 +26,32 @@
   @media (max-width: $celularL) {
     .personalizados {
         img {
-            width:18rem;
+            width:15rem;
         }
     }
+
+    .titulo1 {
+        video {
+            width: 18rem;
+        }
+    }
+  }
+
+  @media (max-width: $celularS) {
+
+    .personalizados {
+
+        img {
+            width:12rem;
+        }
+    }
+
+    .titulo1 {
+        margin: 2rem;
+
+        video {
+            width: 12rem;
+        }
+    }
+
   }

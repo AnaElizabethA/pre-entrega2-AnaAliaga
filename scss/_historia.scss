@@ -14,13 +14,7 @@
 }
 
 .parrafoH {
-    display: flex;
-    margin: 4rem 5rem;
-    padding: 1rem;
-    background-color: bisque;
-    text-align: center;
-    font-size: 1.5rem;
-    border-style: double;
+    @extend .parrafoH;
 }
 
 .tarjetas h3 {
