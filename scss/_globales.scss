@@ -178,9 +178,6 @@ footer {
 /* Cambios Vista Celular S */
 
 @media (max-width: $celularS) {
-    #cabecera {
-        display: inline-flex;
-    }
 
     .logo {
         width: $iconoMediano;

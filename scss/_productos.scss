@@ -5,7 +5,6 @@
 .tarjetas-modulares,
 .tarjetas-extras {
     @include tarjetas;
-    height: 35rem;
 }
 
 .btn { 
@@ -22,17 +21,16 @@
 }
 
 @media (max-width: $tablet) {
-    .tarjetas-arrimo
-    .tarjetas-mesas
-    .tarjetas-modulares
+    .tarjetas-arrimo,
+    .tarjetas-mesas,
+    .tarjetas-modulares,
     .tarjetas-extras {
-        display: flex;
         flex-wrap: wrap;
-        justify-items: center;
-        align-items: center;
+        justify-content: center;
     }
-
 }
+
+
 
 @media (max-width: $celularS) {
     .tarjetas-arrimo,

@@ -44,7 +44,7 @@
 
 #cuerpo {
   background-color: blanchedalmond;
-  font-family: "Merriweather", serif;
+  font-family: "Cabin", sans-serif;
 }
 
 .titulo1 {
@@ -160,9 +160,6 @@ footer .container-redes a {
 }
 /* Cambios Vista Celular S */
 @media (max-width: 320px) {
-  #cabecera {
-    display: inline-flex;
-  }
   .logo {
     width: 15rem;
   }
@@ -259,7 +256,6 @@ footer .container-redes a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 35rem;
 }
 
 .btn, form .botones-form {
@@ -273,11 +269,12 @@ footer .container-redes a {
 }
 
 @media (max-width: 768px) {
-  .tarjetas-arrimo .tarjetas-mesas .tarjetas-modulares .tarjetas-extras {
-    display: flex;
+  .tarjetas-arrimo,
+  .tarjetas-mesas,
+  .tarjetas-modulares,
+  .tarjetas-extras {
     flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 320px) {
@@ -321,6 +318,9 @@ footer .container-redes a {
   .col {
     width: 45%;
     margin: 0.5rem;
+  }
+  .parrafoH {
+    font-size: larger;
   }
 }
 @media (max-width: 428px) {
