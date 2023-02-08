@@ -22,10 +22,56 @@
     text-decoration: underline;
     padding: 2rem;
     margin: 2rem;
+    
 }
 
 .col {
     display: inline-block;
-    width: 40%;
-    margin: 2rem;
+    width: 46%;
+    margin: 1rem;
 }
+
+@media (max-width: $tablet) {
+
+    .titulo1 {
+    img{
+        width: 30rem;
+    }
+}
+
+    .col {
+        width: 45%;
+        margin:0.5rem;
+    }
+}
+
+@media (max-width: $celularL) {
+
+    .titulo1 {
+    img{
+        width: 18rem;
+    }
+}
+
+   .row {
+    @include flex-columna;
+
+   .col {
+    width: 20rem;
+    }
+}
+
+@media (max-width: $celularS) {
+
+    .titulo1 {
+        img{
+            width: 14rem;
+        }
+    }
+
+}
+}
+
+
+
+

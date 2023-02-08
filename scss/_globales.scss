@@ -94,7 +94,7 @@ footer {
 /*Cambios Vista Tablet*/
 
 @media (max-width: $tablet){
-    
+
     .logo {
         width: $iconoGrande;
     }
@@ -158,11 +158,6 @@ footer {
         }
     }
 
-    .titulo1 {
-        img{
-            width: 25rem;
-        }
-    }
 
     .col {
         width: 30;
